@@ -1,0 +1,86 @@
+.btn {
+  border: none;
+  border-radius: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+ transition: background-color 0.2s ease;
+  padding: 0.6rem 1rem;
+  z-index: 999;
+  width: 18rem;
+  height: 4rem;
+}	
+
+.btn-primary {
+  background-color: #02C543;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #333;	
+}
+
+.btn-danger {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------- RESPONSIVE MEDIA QUERIES ---------------- */
+
+@media (max-width: 520px) {
+  .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+  .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1260px) {
+  .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1261px) and (max-width: 1440px) {
+  .btn {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+
+  }
+}
+
+/* >1440px keeps default styling */
+
