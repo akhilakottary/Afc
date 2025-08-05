@@ -1,0 +1,156 @@
+.otp-page {
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* Page layout wrapper */
+.otp-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16rem;
+}
+
+/* Top section styles */
+.otp-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.otp-instruction {
+  font-size: 1rem;
+  color: #eeeeee;
+  line-height: 1.4;
+  margin-top: 2rem;
+}
+
+.otp-number {
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Timer or error message */
+.otp-timer {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.otp-timer.error {
+  color: red;
+}
+
+/* OTP box input */
+.otp-inputs {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+}
+
+.otp-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+  color: #000;
+  outline: none;
+}
+
+/* Resend section */
+.resend-text {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-align: center;
+}
+
+.resend-link {
+  color: #00c853;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Bottom Verify button */
+.login-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+/* Media Queries  */
+
+
+@media (max-width: 768px) {
+  .otp-wrapper {
+    gap: 10rem;
+  }
+
+  .otp-box {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .otp-instruction {
+    font-size: 0.9rem;
+  }
+
+  .otp-timer {
+    font-size: 0.9rem;
+  }
+
+  .resend-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .otp-wrapper {
+    gap: 8rem;
+  }
+
+  .otp-box {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  .otp-instruction {
+    font-size: 0.85rem;
+  }
+
+  .otp-timer {
+    font-size: 0.85rem;
+  }
+
+  .resend-text {
+    font-size: 0.8rem;
+  }
+
+  .back-button {
+    font-size: 20px;
+  }
+}
