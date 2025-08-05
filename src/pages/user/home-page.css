@@ -1,0 +1,100 @@
+.home-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../../assets/landing-bg.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+
+}
+
+.aimit-logo {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+/* Responsive design */
+@media (max-width: 520px) {
+    .aimit-logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+    .home-buttons {
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 768px) {
+    .aimit-logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+    .home-buttons {
+        gap: 1.8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .aimit-logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .home-buttons {
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1260px) {
+  .aimit-logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .home-buttons {
+        gap: 2rem;
+    }
+
+}
+
+@media (min-width: 1261px) and (max-width: 1440px) {
+  .aimit-logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .home-buttons {
+        gap: 2rem;
+    }
+}
+
+/* No media query for >1440px — default design remains */
