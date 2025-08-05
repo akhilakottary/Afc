@@ -1,0 +1,21 @@
+.custom-input {
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Match button scaling */
+@media (max-width: 520px) {
+  .custom-input {
+    font-size: 0.95rem;
+  }
+}
+
+.custom-search-input input::placeholder {
+  color: white !important;
+  opacity: 0.9;
+}
