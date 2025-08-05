@@ -99,9 +99,9 @@
   margin-top: 2rem;
 }
 
-/* ------------------- */
-/* 💻 Media Queries ✅ */
-/* ------------------- */
+
+/* Media Queries  */
+
 
 @media (max-width: 768px) {
   .otp-wrapper {
