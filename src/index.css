@@ -11,3 +11,18 @@ html, body {
   height: 100%;
   width: 100%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  overflow-y: scroll; /* allow scroll */
+  scrollbar-width: none; /* Firefox */
+  margin: 0px !important;
+  height: 100% !important;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}

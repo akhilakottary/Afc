@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+.carousel-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.carousel-title {
+  font-family: 'Mogra', cursive;
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 0%;
+}
+
+.carousel-container .slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-card {
+  width: 190px;
+  height: 228px;
+  border-radius: 1.2rem;
+  background: linear-gradient(
+    135deg,
+    #35a83d,
+    #28932c,
+    #218948,
+    #1e8c52,
+    #2a932e,
+    #399c21
+  );
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+  opacity: 0.4;
+  filter: blur(1.5px);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Highlight center slide */
+.carousel-container .slick-center .carousel-card {
+  transform: scale(1.05);
+  opacity: 1;
+  filter: none;
+  z-index: 999;
+}
+
+.carousel-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 0.8rem;
+}
+
+.carousel-name {
+  color: white;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+/* Dots */
+.carousel-container .slick-dots li button {
+  background-color: white !important;
+  opacity: 0.5;
+}
+
+.carousel-container .slick-dots li.slick-active button {
+  opacity: 1;
+}
+
+/* Responsive - force 3 items always */
+@media (max-width: 1024px) {
+  .carousel-card {
+    width: 160px;
+    height: 200px;
+  }
+
+  .carousel-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .carousel-name {
+    font-size: 0.9rem;
+  }
+}

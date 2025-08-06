@@ -1,0 +1,39 @@
+.filter-category-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+
+.filter-tag {
+  font-size: 0.9rem;
+  color: white;
+  background-color: #1a1a1a;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.filter-tag.selected {
+  background-color: #00c853; /* Green highlight */
+  color: white;
+}
+
+.filter-tag:hover {
+  opacity: 0.8;
+}
+
+/* Scrollbar hidden for horizontal scroll */
+.filter-category-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .filter-tag {
+    font-size: 0.85rem;
+  }
+}
