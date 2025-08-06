@@ -1,0 +1,77 @@
+.food-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.food-card.selected {
+  border: 2px solid #00c853;
+}
+
+.food-image-container {
+  position: relative;
+}
+
+.food-image {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.bookmark {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  width: 11px;
+  height: 20px;
+  background-color: #007bff;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  z-index: 2;
+}
+
+.food-details {
+  flex: 1;
+}
+
+.food-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.food-price {
+  color: green;
+  font-size: 0.9rem;
+}
+
+.food-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.food-quantity button {
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.food-quantity.disabled button {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.food-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,39 @@
+/* Wrapper: Applies to the outer Input component */
+.custom-search-input {
+  background-color: transparent;
+  border: 1px solid #555;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  width: 100%;
+  font-size: 0.95rem;
+  color: white;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Focus state */
+.custom-search-input.focused {
+  background-color: white;
+  color: black;
+  border-color: #00c853;
+}
+
+/* Target the internal input field */
+.custom-search-input .ant-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: inherit; /* inherits white or black from wrapper */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* White placeholder always */
+.custom-search-input .ant-input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+/* Focused placeholder when bg turns white */
+.custom-search-input.focused .ant-input::placeholder {
+  color: #555;
+  opacity: 0.6;
+}
