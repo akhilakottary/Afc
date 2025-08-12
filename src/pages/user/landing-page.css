@@ -12,10 +12,10 @@
   overflow: hidden;
 }
 
-.overlay {	
+.overlay {
   position: absolute;
   top: 0;
-  left: 0;  
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -44,7 +44,7 @@
     display: flex;
   }
 
-  .main-layout{
+  .main-layout {
     gap: 21.25rem;
   }
 }
@@ -56,8 +56,8 @@
     display: flex;
   }
 
-  .main-layout{
-    gap: 21.25rem;
+  .main-layout {
+    gap: 30.25rem;
   }
 }
 
