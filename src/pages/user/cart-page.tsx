@@ -83,7 +83,13 @@ const CartPage = () => {
                 <AntButton
                   icon={<MinusOutlined />}
                   size="small"
-                  onClick={() => handleQtyChange(item.id, Math.max(1, item.quantity - 1))}
+                  onClick={() => {
+                    if (item.quantity > 1) {
+                      handleQtyChange(item.id, item.quantity - 1);
+                    } else {
+                      handleRemove(item.id);
+                    }
+                  }}
                 />
                 <span className="quantity-value">{item.quantity}</span>
                 <AntButton
