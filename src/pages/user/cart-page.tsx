@@ -2,7 +2,7 @@ import './cart-page.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { removeItem, updateQuantity, clearCart } from '../../features/cart/cartslice';
+import { removeItem, updateQuantity } from '../../features/cart/cartslice';
 import { ArrowLeftOutlined, PlusOutlined, DeleteOutlined, MinusOutlined } from '@ant-design/icons';
 import { message, Button as AntButton } from 'antd';
 import CommonButton from '../../common-components/button';
@@ -41,11 +41,11 @@ const CartPage = () => {
   };
 
   const handlePay = () => {
-    message.success('Payment successful!');
-    if (cartType) {
-      dispatch(clearCart(cartType));
-    }
-    navigate('/token');
+      message.success('Payment successful!');
+    // if (cartType) {
+    //   dispatch(clearCart(cartType));
+    // }
+      navigate('/token-page');
   };
 
   const handleAddMore = () => {

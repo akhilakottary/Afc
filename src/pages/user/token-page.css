@@ -1,0 +1,118 @@
+/* token-page.css */
+.token-page {
+  background: #000;
+  color: white;
+  min-height: 100vh;
+  padding: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.token-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.token-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.order-status {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #00c853; /* Green for success */
+}
+
+.ordered-items {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ordered-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.delivery-checkbox {
+  margin-right: 0.5rem;
+}
+
+.item-name {
+  flex: 1;
+}
+
+.item-qty {
+  margin: 0 1rem;
+}
+
+.item-price {
+  font-weight: bold;
+  color: orange;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.bookmark {
+  width: 11px;
+  height: 20px;
+  background-color: #007bff; /* Blue */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  margin-right: 5px;
+}
+
+.bookmark-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.bookmark-icon {
+  width: 11px;
+  height: 20px;
+  background-color: #007bff;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
+
+.token-number {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.token-value {
+  background: #00c853;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.payment-time {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: gray;
+}
+.item-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+}

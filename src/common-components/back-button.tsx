@@ -12,4 +12,5 @@ const IconButton = ({ icon, onClick, className = '' }: IconButtonProps) => {
   );
 };
 
+
 export default IconButton;
