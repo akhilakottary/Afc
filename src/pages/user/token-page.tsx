@@ -86,11 +86,12 @@ const TokenPage = () => {
               checked={deliveredStatus[item.id] || false}
               onChange={(e) => handleDeliveryCheck(item.id, e.target.checked)}
               className="delivery-checkbox"
+              disabled
             />
 
-            {/* Show bookmark before savoury items */}
+            {/* Show bookmark before bookmarked items */}
             <div className="item-name-wrapper">
-              {cartType === 'savoury' && <div className="bookmark" />}
+              {item.isBookmarked && <div className="bookmark" />}
               <span className="item-name">{item.name}</span>
             </div>
 

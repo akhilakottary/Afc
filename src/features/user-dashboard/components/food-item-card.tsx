@@ -66,7 +66,7 @@ const FoodItemCard = ({
         <div className="food-price">₹{price}</div>
       </div>
 
-      <div className={`food-quantity ${isSelected ? '' : 'disabled'}`}>
+      <div className={`food-quantity ${isSelected ? '' : 'disabled'}`} style={{ visibility: isSelected ? 'visible' : 'hidden' }}>
         <button onClick={handleDecrease} disabled={!isSelected}>-</button>
         <span>{qty}</span>
         <button onClick={handleIncrease} disabled={!isSelected}>+</button>

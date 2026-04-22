@@ -21,19 +21,20 @@ const SpecialCarousel = ({ items }: Props) => {
         dots
         className="carousel-container"
         centerMode
-        slidesToShow={2.5}
+        slidesToShow={3}
         autoplaySpeed={1500}
         responsive={[
           {
             breakpoint: 9999, // large screens
             settings: {
-              slidesToShow: 2.5,
+              slidesToShow: 3,
             },
           },
           {
             breakpoint: 768, // tablets and below
             settings: {
-              slidesToShow: 2.6,
+              slidesToShow: 1,
+              centerPadding: '60px',
             },
           },
         ]}
